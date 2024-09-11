@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_skills",
+  "info": {
+    "displayName": "Skills",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleShadow": {
+      "type": "string"
+    }
+  }
+}

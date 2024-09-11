@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_homes",
+  "info": {
+    "displayName": "Home"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

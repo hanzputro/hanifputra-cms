@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_get_in_touches",
+  "info": {
+    "displayName": "Get In Touch"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleShadow": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
