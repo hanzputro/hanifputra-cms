@@ -9,6 +9,9 @@ export interface LayoutSkills extends Schema.Component {
   attributes: {
     title: Attribute.String;
     titleShadow: Attribute.String;
+    category1: Attribute.String;
+    category2: Attribute.String;
+    skill: Attribute.Relation<'layout.skills', 'oneToOne', 'api::skill.skill'>;
   };
 }
 
@@ -27,10 +30,17 @@ export interface LayoutHome extends Schema.Component {
   collectionName: 'components_layout_homes';
   info: {
     displayName: 'Home';
+    description: '';
   };
   attributes: {
     description: Attribute.Text;
-    url: Attribute.String;
+    urlSpline: Attribute.String;
+    title1: Attribute.String;
+    title2: Attribute.String;
+    titleShadow1: Attribute.String;
+    titleShadow2: Attribute.String;
+    titleShadow3: Attribute.String;
+    slogan: Attribute.String;
   };
 }
 
