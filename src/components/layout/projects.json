@@ -1,7 +1,8 @@
 {
   "collectionName": "components_layout_projects",
   "info": {
-    "displayName": "Projects"
+    "displayName": "Projects",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,6 +11,11 @@
     },
     "titleShadow": {
       "type": "string"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     }
   }
 }

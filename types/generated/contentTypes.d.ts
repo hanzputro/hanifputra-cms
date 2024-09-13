@@ -804,6 +804,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     descriptionSEO: Attribute.Text;
     Home: Attribute.Component<'layout.home'>;
     Skill: Attribute.Component<'layout.skills'>;
+    Project: Attribute.Component<'layout.projects'>;
+    Contact: Attribute.Component<'layout.get-in-touch'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

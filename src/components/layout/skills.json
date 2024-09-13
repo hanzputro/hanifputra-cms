@@ -18,9 +18,14 @@
     "category2": {
       "type": "string"
     },
-    "skill": {
+    "design": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "code": {
+      "type": "relation",
+      "relation": "oneToMany",
       "target": "api::skill.skill"
     }
   }

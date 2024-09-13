@@ -27,6 +27,16 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.skills"
+    },
+    "Project": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.projects"
+    },
+    "Contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.get-in-touch"
     }
   }
 }

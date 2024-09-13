@@ -1,7 +1,8 @@
 {
   "collectionName": "components_layout_get_in_touches",
   "info": {
-    "displayName": "Get In Touch"
+    "displayName": "Get In Touch",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,6 +14,11 @@
     },
     "description": {
       "type": "text"
+    },
+    "social_medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-media.social-media"
     }
   }
 }

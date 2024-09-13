@@ -11,7 +11,12 @@ export interface LayoutSkills extends Schema.Component {
     titleShadow: Attribute.String;
     category1: Attribute.String;
     category2: Attribute.String;
-    skill: Attribute.Relation<'layout.skills', 'oneToOne', 'api::skill.skill'>;
+    design: Attribute.Relation<
+      'layout.skills',
+      'oneToMany',
+      'api::skill.skill'
+    >;
+    code: Attribute.Relation<'layout.skills', 'oneToMany', 'api::skill.skill'>;
   };
 }
 
@@ -19,10 +24,16 @@ export interface LayoutProjects extends Schema.Component {
   collectionName: 'components_layout_projects';
   info: {
     displayName: 'Projects';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     titleShadow: Attribute.String;
+    projects: Attribute.Relation<
+      'layout.projects',
+      'oneToMany',
+      'api::project.project'
+    >;
   };
 }
 
@@ -48,11 +59,17 @@ export interface LayoutGetInTouch extends Schema.Component {
   collectionName: 'components_layout_get_in_touches';
   info: {
     displayName: 'Get In Touch';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     titleShadow: Attribute.String;
     description: Attribute.Text;
+    social_medias: Attribute.Relation<
+      'layout.get-in-touch',
+      'oneToMany',
+      'api::social-media.social-media'
+    >;
   };
 }
 
