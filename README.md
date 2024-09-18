@@ -59,3 +59,17 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+## References
+
+- [ deploying Strapi on Render](https://www.youtube.com/watch?v=mJU5RkvazXE)
+
+## Pros
+
+- Graphql compatibility
+- create schema with GUI
+
+## Cons
+
+- setting database first to surely know where data you can store
+- deploy production into server must have credit card even thought free access

@@ -4,18 +4,39 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "Home Page"
+    "displayName": "Home Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titleSEO": {
       "type": "string"
     },
-    "description": {
+    "descriptionSEO": {
       "type": "text"
+    },
+    "Home": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.home"
+    },
+    "Skill": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.skills"
+    },
+    "Project": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.projects"
+    },
+    "Contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.get-in-touch"
     }
   }
 }

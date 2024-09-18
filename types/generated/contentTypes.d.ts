@@ -794,13 +794,18 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     singularName: 'home-page';
     pluralName: 'home-pages';
     displayName: 'Home Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
+    titleSEO: Attribute.String;
+    descriptionSEO: Attribute.Text;
+    Home: Attribute.Component<'layout.home'>;
+    Skill: Attribute.Component<'layout.skills'>;
+    Project: Attribute.Component<'layout.projects'>;
+    Contact: Attribute.Component<'layout.get-in-touch'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -861,6 +866,7 @@ export interface ApiSkillSkill extends Schema.CollectionType {
     singularName: 'skill';
     pluralName: 'skills';
     displayName: 'Skill';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -868,6 +874,8 @@ export interface ApiSkillSkill extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     image: Attribute.Media<'images'> & Attribute.Required;
+    category: Attribute.Enumeration<['DESIGN', 'CODE']> &
+      Attribute.DefaultTo<'DESIGN'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

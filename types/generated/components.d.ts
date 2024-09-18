@@ -9,6 +9,14 @@ export interface LayoutSkills extends Schema.Component {
   attributes: {
     title: Attribute.String;
     titleShadow: Attribute.String;
+    category1: Attribute.String;
+    category2: Attribute.String;
+    design: Attribute.Relation<
+      'layout.skills',
+      'oneToMany',
+      'api::skill.skill'
+    >;
+    code: Attribute.Relation<'layout.skills', 'oneToMany', 'api::skill.skill'>;
   };
 }
 
@@ -16,10 +24,16 @@ export interface LayoutProjects extends Schema.Component {
   collectionName: 'components_layout_projects';
   info: {
     displayName: 'Projects';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     titleShadow: Attribute.String;
+    projects: Attribute.Relation<
+      'layout.projects',
+      'oneToMany',
+      'api::project.project'
+    >;
   };
 }
 
@@ -27,10 +41,17 @@ export interface LayoutHome extends Schema.Component {
   collectionName: 'components_layout_homes';
   info: {
     displayName: 'Home';
+    description: '';
   };
   attributes: {
     description: Attribute.Text;
-    url: Attribute.String;
+    urlSpline: Attribute.String;
+    title1: Attribute.String;
+    title2: Attribute.String;
+    titleShadow1: Attribute.String;
+    titleShadow2: Attribute.String;
+    titleShadow3: Attribute.String;
+    slogan: Attribute.String;
   };
 }
 
@@ -38,11 +59,17 @@ export interface LayoutGetInTouch extends Schema.Component {
   collectionName: 'components_layout_get_in_touches';
   info: {
     displayName: 'Get In Touch';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     titleShadow: Attribute.String;
     description: Attribute.Text;
+    social_medias: Attribute.Relation<
+      'layout.get-in-touch',
+      'oneToMany',
+      'api::social-media.social-media'
+    >;
   };
 }
 

@@ -11,6 +11,22 @@
     },
     "titleShadow": {
       "type": "string"
+    },
+    "category1": {
+      "type": "string"
+    },
+    "category2": {
+      "type": "string"
+    },
+    "design": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "code": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
     }
   }
 }

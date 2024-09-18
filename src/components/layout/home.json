@@ -1,14 +1,33 @@
 {
   "collectionName": "components_layout_homes",
   "info": {
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "description": {
       "type": "text"
     },
-    "url": {
+    "urlSpline": {
+      "type": "string"
+    },
+    "title1": {
+      "type": "string"
+    },
+    "title2": {
+      "type": "string"
+    },
+    "titleShadow1": {
+      "type": "string"
+    },
+    "titleShadow2": {
+      "type": "string"
+    },
+    "titleShadow3": {
+      "type": "string"
+    },
+    "slogan": {
       "type": "string"
     }
   }
